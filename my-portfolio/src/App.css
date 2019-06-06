@@ -40,3 +40,32 @@ background: linear-gradient(185deg, rgba(0,11,255,1) 0%, rgba(0,140,255,1) 50%, 
 .navbar{
   width: 100vw;
 }
+
+.section1{
+  display: flex;
+  flex-direction: row;
+}
+
+.box1{
+width: 33.3vw;
+display: flex;
+justify-content: center;
+align-items:  center;
+color:white
+
+}
+
+.box2{
+  width: 33.3vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box3{
+  width: 33.3vw;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  color:white
+}
