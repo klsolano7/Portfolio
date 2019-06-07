@@ -69,3 +69,16 @@ color:white
   align-items:  center;
   color:white
 }
+
+li{
+
+  display: flex;
+  flex-direction: row;
+}
+
+li ul {
+  width: 33.3vw;
+  display: flex;
+  justify-content: center;
+  margin: 0%
+}
