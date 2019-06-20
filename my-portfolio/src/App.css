@@ -39,6 +39,25 @@ background: linear-gradient(185deg, rgba(0,11,255,1) 0%, rgba(0,140,255,1) 50%, 
 
 .navbar{
   width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+
+  height: 10vh;
+  
+}
+
+.navbar a{
+
+  color: white;
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 7px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  font-size: 25px;
 }
 
 .section1{
@@ -85,4 +104,8 @@ li ul {
 
 .mainContainer{
   background: linear-gradient(to right, rgb(203, 52, 181), rgb(68, 166, 187))
+}
+
+.wrap{
+  font-size: 15px;
 }

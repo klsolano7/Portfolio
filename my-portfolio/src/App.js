@@ -4,23 +4,23 @@ import "./App.css";
 import Particles from "react-particles-js";
 
 const particlesOpt = {
-  particles:{
+  particles: {
     number: {
       value: 250,
       density: {
-        enable: true, 
+        enable: true,
         value_area: 400
       }
     }
   }
-}
+};
 
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
   this.loopNum = 0;
   this.period = parseInt(period, 10) || 1000;
-  this.txt = '';
+  this.txt = "";
   this.tick();
   this.isDeleting = false;
 };
@@ -30,40 +30,42 @@ TxtType.prototype.tick = function() {
   var fullTxt = this.toRotate[i];
 
   if (this.isDeleting) {
-  this.txt = fullTxt.substring(0, this.txt.length - 1);
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
   } else {
-  this.txt = fullTxt.substring(0, this.txt.length + 1);
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
 
   var that = this;
   var delta = 200 - Math.random() * 100;
 
-  if (this.isDeleting) { delta /= 2; }
+  if (this.isDeleting) {
+    delta /= 2;
+  }
 
   if (!this.isDeleting && this.txt === fullTxt) {
-  delta = this.period;
-  this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-  this.isDeleting = false;
-  this.loopNum++;
-  delta = 500;
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === "") {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
   }
 
   setTimeout(function() {
-  that.tick();
+    that.tick();
   }, delta);
 };
 
 window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
+  var elements = document.getElementsByClassName("typewrite");
+  for (var i = 0; i < elements.length; i++) {
+    var toRotate = elements[i].getAttribute("data-type");
+    var period = elements[i].getAttribute("data-period");
+    if (toRotate) {
+      new TxtType(elements[i], JSON.parse(toRotate), period);
+    }
   }
   // INJECT CSS
   var css = document.createElement("style");
@@ -74,25 +76,32 @@ window.onload = function() {
 
 function App() {
   return (
+    <div>
     <div className="mainContainer">
-      <div>
-      {/* <Particles
+      <div className="navbar">
+      <h1 style={{color:"white"}}>KS</h1>
+        {/* <img width="50px" src={this.state.user.imageUrl} /> */}
+        <NavLink to="/dashboard" exact>
+          Technologies
+        </NavLink>
+        <NavLink to="/searchevent">Projects</NavLink>
+        <NavLink to="/signup">Contact</NavLink>
+      </div>
+      <Particles params={particlesOpt} />
+
+
+        {/* <Particles
         params={
           particlesOpt
         }
       /> */}
-      <h1 style={{display:"flex", justifyContent:"center", }}> 
+        {/* <h1 style={{display:"flex", justifyContent:"center", }}> 
   <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Ken.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
     <span class="wrap"></span>
   </a>
-</h1>
-<Particles
-        params={
-          particlesOpt
-        }
-        
-      />
-</div>
+</h1> */}
+       
+  
 
       {/* <div
         className="section1"
@@ -203,6 +212,13 @@ function App() {
             </a></ul>
         </li>
       </div> */}
+
+    </div>
+    <h1 style={{display:"flex", justifyContent:"center", }}> 
+  <a href="" class="typewrite" data-period="2000" data-type='[ "Hi, Im Ken.", "I am Creative.", "I Love Design.", "I Love to Develop." ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
     </div>
   );
 }
@@ -221,3 +237,6 @@ export default App;
 }
 
 //continuing to work on project and studying react in Udemy
+
+
+// background-color: slategrey;
