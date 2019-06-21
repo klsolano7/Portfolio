@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./App.css";
 import Particles from "react-particles-js";
+import Typed from "react-typed";
 
 const particlesOpt = {
   particles: {
@@ -14,6 +15,8 @@ const particlesOpt = {
     }
   }
 };
+
+
 
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -219,6 +222,20 @@ function App() {
     <span class="wrap"></span>
   </a>
 </h1>
+
+<h2>
+                  I am{" "}
+                  <Typed
+                    strings={["a developer", "a problem-solver", "a dog lover"]}
+                    typeSpeed={120}
+                    backSpeed={75}
+                    backDelay={1000}
+                    // style={{ color: "red" }}
+                    loop
+                  />
+
+                </h2>
+
     </div>
   );
 }
