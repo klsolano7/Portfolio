@@ -41,16 +41,16 @@ background: linear-gradient(185deg, rgba(0,11,255,1) 0%, rgba(0,140,255,1) 50%, 
   width: 100vw;
   display: flex;
   justify-content: space-evenly;
-
-  height: 10vh;
+  padding: 0%;
+  height: 7vh;
   
 }
 
 .navbar a{
 
   color: white;
-  font-size: 20px;
-  border: 2px solid white;
+  /* font-size: 20px; */
+  /* border: 2px solid white; */
   padding: 7px;
   border-radius: 20px;
   text-decoration: none;
@@ -108,4 +108,34 @@ li ul {
 
 .wrap{
   font-size: 15px;
+}
+
+
+.techContainer{
+  height: 50vh;
+  background-color: rgb(128, 128, 128);
+
+}
+
+
+
+.type{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstIcons{
+  width: 15vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.firstIconPics{
+  width: 5vw
+}
+
+.arrow{
+  height: 3vh
 }
