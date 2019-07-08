@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -112,7 +113,7 @@ li ul {
 
 
 .techContainer{
-  height: 50vh;
+  height: 75vh;
   background-color: rgb(128, 128, 128);
 
 }
@@ -139,3 +140,18 @@ li ul {
 .arrow{
   height: 3vh
 }
+
+.stack{
+  height:30vh;
+  display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.stackBox{
+  width: 20vw;
+  height: 30vh;
+}
+
+/* //3 cards */
+

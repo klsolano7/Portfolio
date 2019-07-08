@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Typed from "react-typed";
+import { Container, Row, Col } from 'react-bootstrap';
 
 export default class Technologies extends Component {
   render() {
@@ -37,6 +38,70 @@ export default class Technologies extends Component {
         <a href="https://www.linkedin.com/in/kennethsolano/"><img src={"./images/linkedin-logo.png"} className="firstIconPics"/></a>
             </div>
           </div>
+          
+          <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4 mt-5" >
+			<div class="card">
+				<h5 class="card-header">
+					Card title
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						Card content
+					</p>
+				</div>
+				<div class="card-footer">
+					Card footer
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 mt-5">
+			<div class="card">
+				<h5 class="card-header">
+					Card title
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						Card content
+					</p>
+				</div>
+				<div class="card-footer">
+					Card footer
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4 mt-5">
+			<div class="card">
+				<h5 class="card-header">
+					Card title
+				</h5>
+				<div class="card-body">
+					<p class="card-text">
+						Card content
+					</p>
+				</div>
+				<div class="card-footer">
+					Card footer
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+          {/* <Container>
+
+  <Row>
+    <Col><div className="stackBox">1 of 3</div></Col>
+    <Col><div className="stackBox">2 of 3 </div></Col>
+    <Col><div className="stackBox">3 of 3 </div></Col>
+  </Row>
+</Container> */}
+          {/* <div className="stack">
+            <div className="stackBox">+</div>
+            <div className="stackBox">+</div>
+            <div className="stackBox">+</div>
+          </div> */}
         </div>
       </div>
     );
