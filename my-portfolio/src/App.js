@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./App.css";
 import Particles from "react-particles-js";
 import Technologies from "./Components/Technologies"
+import Projects from "./Components/Projects"
 import Typed from "react-typed";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -48,7 +49,7 @@ function App() {
 
 
 <Technologies/>
-
+{/* <Projects/> */}
 
     </div>
   );

@@ -1,13 +1,20 @@
 import React, { Component, Fragment } from "react";
 import Typed from "react-typed";
 import { Container, Row, Col } from "react-bootstrap";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+// import { ReactComponent as ReactLogo } from '../assets/images/react.jpg';
+
+
 
 export default class Technologies extends Component {
   render() {
+
+    const x = 50;
+
     return (
       <Fragment>
         <section className="section2">
-          <div className="type">
+          <div className="type ">
 
             <div>
               <h3 style={{ textAlign: "center", color:"#e8e8e8" }}>
@@ -43,7 +50,7 @@ export default class Technologies extends Component {
 
           <div className="container" id="technologies">
             <div className="row">
-              <div className="col mb-4">
+              <div className="col mb-4" style={{height:"25vh", display:"flex", justifyContent:"center", alignItems:"center", marginTop:"-5%"}}>
                 <h1 className="text-center text-white">
                   <span className="tech-text">my</span>
                   <span className="stack-text">Stack</span>
@@ -71,7 +78,9 @@ export default class Technologies extends Component {
                       <div className="row">
                         <div className="col-6">
                           <li class="list-group-item">
-                            Pic<br />React.js
+                          {/* <ReactLogo height={x} width={x} className="mb-2" /> */}
+                          pic
+                            <br />React.js
                           </li>
                           <li class="list-group-item">
                             Pic<br />HTML5
