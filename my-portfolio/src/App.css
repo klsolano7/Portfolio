@@ -49,7 +49,7 @@ background: linear-gradient(185deg, rgba(0,11,255,1) 0%, rgba(0,140,255,1) 50%, 
 
 .navbar a{
 
-  color: white;
+  color: #e8e8e8;
   /* font-size: 20px; */
   /* border: 2px solid white; */
   padding: 7px;
@@ -104,7 +104,8 @@ li ul {
 }
 
 .mainContainer{
-  background: linear-gradient(to right, rgb(203, 52, 181), rgb(68, 166, 187))
+  /* background: linear-gradient(to right, rgb(203, 52, 181), rgb(68, 166, 187)) */
+  background: #145374;
 }
 
 .wrap{
@@ -121,20 +122,23 @@ li ul {
 
 
 .type{
+  height: 35vh;
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   flex-direction: column;
   align-items: center;
 }
 
 .firstIcons{
-  width: 15vw;
+  /* width: 15vw; */
+  width: 10vw;
   display: flex;
   justify-content: space-evenly;
+  /* margin-top: 2%; */
 }
 
 .firstIconPics{
-  width: 5vw
+  width: 3vw
 }
 
 .arrow{
@@ -155,3 +159,25 @@ li ul {
 
 /* //3 cards */
 
+.card{
+  background: rgba(95, 95, 95, 0.11) !important;
+  border-radius: 20px !important;
+  border-color: rgba(255, 255, 255, 0.178)!important;
+  /* border-width: 2px !important; */
+  border: none !important;
+  color: white;
+  margin-bottom: 30px;
+  /* box-shadow: 10px 10px 50px rgba(255, 255, 255, 0.021); */
+}
+
+#technologies{
+  color: black;
+}
+
+.section2{
+  background-color: #00334e
+}
+
+.card-body{
+  background-color: #5588a3
+}

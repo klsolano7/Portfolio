@@ -1,19 +1,22 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import Typed from "react-typed";
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 
 export default class Technologies extends Component {
   render() {
     return (
-      <div>
-        <div className="techContainer">
+      <Fragment>
+        <section className="section2">
           <div className="type">
+
             <div>
-              <h3 style={{textAlign:"center"}}>Hi, my name is Kenneth Solano</h3>
+              <h3 style={{ textAlign: "center", color:"#e8e8e8" }}>
+                Hi, my name is Kenneth Solano
+              </h3>
             </div>
             <div>
               {" "}
-              <h2 style={{ textAlign: "center" }}>
+              <h2 style={{ textAlign: "center", color:"#e8e8e8" }}>
                 I am{" "}
                 <Typed
                   strings={["a developer", "a problem-solver", "a dog lover"]}
@@ -25,85 +28,153 @@ export default class Technologies extends Component {
                 />
               </h2>
             </div>
-            <div className="firstIcons" style={{display:"flex"}}>
-            {/* <div         style={{
-          backgroundImage: "url(./images/github.png)",
-          backgroundSize: "cover",
-        //   height: "129vh",
-          width: "5vw",
-          height:"10vh",
-          backgroundPosition: "center"
-        }}></div> */}
-        <a href="https://github.com/klsolano7"><img src={"./images/github.png"} className="firstIconPics"/></a>
-        <a href="https://www.linkedin.com/in/kennethsolano/"><img src={"./images/linkedin-logo.png"} className="firstIconPics"/></a>
+            <div className="firstIcons" style={{ display: "flex" }}>
+              <a href="https://github.com/klsolano7">
+                <img src={"./images/github.png"} className="firstIconPics" />
+              </a>
+              <a href="https://www.linkedin.com/in/kennethsolano/">
+                <img
+                  src={"./images/linkedin-logo.png"}
+                  className="firstIconPics"
+                />
+              </a>
             </div>
           </div>
-          
-          {/* <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-4 mt-5" >
-			<div class="card">
-				<h5 class="card-header">
-					Card title
-				</h5>
-				<div class="card-body">
-					<p class="card-text">
-						Card content
-					</p>
-				</div>
-				<div class="card-footer">
-					Card footer
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 mt-5">
-			<div class="card">
-				<h5 class="card-header">
-					Card title
-				</h5>
-				<div class="card-body">
-					<p class="card-text">
-						Card content
-					</p>
-				</div>
-				<div class="card-footer">
-					Card footer
-				</div>
-			</div>
-		</div>
-		<div class="col-md-4 mt-5">
-			<div class="card">
-				<h5 class="card-header">
-					Card title
-				</h5>
-				<div class="card-body">
-					<p class="card-text">
-						Card content
-					</p>
-				</div>
-				<div class="card-footer">
-					Card footer
-				</div>
-			</div>
-		</div>
-	</div>
-</div> */}
 
-          {/* <Container>
+          <div className="container" id="technologies">
+            <div className="row">
+              <div className="col mb-4">
+                <h1 className="text-center text-white">
+                  <span className="tech-text">my</span>
+                  <span className="stack-text">Stack</span>
+                </h1>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-6 frontStack ">
+                {/* <Slide bottom> */}
 
-  <Row>
-    <Col><div className="stackBox">1 of 3</div></Col>
-    <Col><div className="stackBox">2 of 3 </div></Col>
-    <Col><div className="stackBox">3 of 3 </div></Col>
-  </Row>
-</Container> */}
-          {/* <div className="stack">
-            <div className="stackBox">+</div>
-            <div className="stackBox">+</div>
-            <div className="stackBox">+</div>
-          </div> */}
-        </div>
-      </div>
+                <div className="card text-center" style={{ color: "black" }}>
+                  <div className="card-body">
+                    <h5 className="card-title text-center">
+                      {/* <FrontendSVG fill={"#00ffd5"} className="mb-3" /> */}
+                      <br />
+                      Front-End
+                    </h5>
+                    <hr />
+                    <p className="card-text text-center">
+                      Practice clean code, optimize site performance & latest
+                      technologies
+                    </p>
+
+                    <ul class="list-group text-center">
+                      <div className="row">
+                        <div className="col-6">
+                          <li class="list-group-item">
+                            Pic<br />React.js
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />HTML5
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />CSS3
+                          </li>
+                        </div>
+                        <div className="col-6">
+                          <li class="list-group-item">
+                            Pic<br />Sass
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />jQuery
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />Bootstrap
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                {/* </Slide> */}
+              </div>
+              <div className="col-lg-6">
+                {/* <Slide right> */}
+                <div className="card" style={{ color: "black" }}>
+                  <div className="card-body">
+                    <h5 className="card-title text-center">
+                      {/* <BackEndSVG fill={"#00ffd5"} className="mb-3" /> */}
+                      <br />
+                      Back-End
+                    </h5>
+                    <hr />
+                    <p className="card-text text-center">
+                      Application optimization, scalability, and data storage
+                      solutions.{" "}
+                    </p>
+                    <ul class="list-group text-center">
+                      <div className="row">
+                        <div className="col-6">
+                          <li class="list-group-item">
+                            Pic<br />Node.js
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />MongoDB
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />Mongoose
+                          </li>
+                        </div>
+                        <div className="col-6">
+                          <li class="list-group-item">
+                            Pic<br />ExpressJs
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />MongoLab
+                          </li>
+                          <li class="list-group-item">
+                            Pic<br />AJAX
+                          </li>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+                {/* </Slide> */}
+              </div>
+            </div>
+          </div>
+        </section>
+      </Fragment>
+
+      // <div id="technologies">
+      //   <div className="techContainer">
+      //     <div className="type">
+      //       <div>
+      //         <h3 style={{textAlign:"center"}}>Hi, my name is Kenneth Solano</h3>
+      //       </div>
+      //       <div>
+      //         {" "}
+      //         <h2 style={{ textAlign: "center" }}>
+      //           I am{" "}
+      //           <Typed
+      //             strings={["a developer", "a problem-solver", "a dog lover"]}
+      //             typeSpeed={120}
+      //             backSpeed={75}
+      //             backDelay={1000}
+      //             // style={{ color: "red" }}
+      //             loop
+      //           />
+      //         </h2>
+      //       </div>
+      //       <div className="firstIcons" style={{display:"flex"}}>
+
+      //   <a href="https://github.com/klsolano7"><img src={"./images/github.png"} className="firstIconPics"/></a>
+      //   <a href="https://www.linkedin.com/in/kennethsolano/"><img src={"./images/linkedin-logo.png"} className="firstIconPics"/></a>
+      //       </div>
+      //     </div>
+
+      //   </div>
+      // </div>
     );
   }
 }
