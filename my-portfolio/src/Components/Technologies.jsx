@@ -2,6 +2,8 @@ import React, { Component, Fragment } from "react";
 import Typed from "react-typed";
 import { Container, Row, Col } from "react-bootstrap";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import {Bootstrap} from "../Components/Icons"
+import {Css, Html, IconReact, Sass} from "../Components/Icons"
 // import { ReactComponent as ReactLogo } from '../assets/images/react.jpg';
 
 
@@ -79,25 +81,25 @@ export default class Technologies extends Component {
                         <div className="col-6">
                           <li class="list-group-item">
                           {/* <ReactLogo height={x} width={x} className="mb-2" /> */}
-                          pic
-                            <br />React.js
+                          <IconReact/>
+                            <div>React.js</div>
                           </li>
                           <li class="list-group-item">
-                            Pic<br />HTML5
+                            <Html/><div>HTML5</div>
                           </li>
                           <li class="list-group-item">
-                            Pic<br />CSS3
+                            <Css/><div>CSS3</div>
                           </li>
                         </div>
                         <div className="col-6">
                           <li class="list-group-item">
-                            Pic<br />Sass
+                            <br />Sass
                           </li>
                           <li class="list-group-item">
-                            Pic<br />jQuery
+                            Pic<br /><div>jQuery</div>
                           </li>
                           <li class="list-group-item">
-                            Pic<br />Bootstrap
+                            <Bootstrap/><div>Bootstrap</div>
                           </li>
                         </div>
                       </div>

@@ -131,14 +131,16 @@ li ul {
 
 .firstIcons{
   /* width: 15vw; */
-  width: 10vw;
   display: flex;
   justify-content: space-evenly;
   margin-top: 1%;
+  width: 100px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .firstIconPics{
-  width: 3vw
+  width: 30px;
 }
 
 .arrow{
