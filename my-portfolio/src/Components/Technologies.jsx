@@ -3,7 +3,7 @@ import Typed from "react-typed";
 import { Container, Row, Col } from "react-bootstrap";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import {Bootstrap} from "../Components/Icons"
-import {Css, Html, IconReact, Sass} from "../Components/Icons"
+import {Css, Html, IconReact, Sass, Jquery, Mongodb, Node} from "../Components/Icons"
 // import { ReactComponent as ReactLogo } from '../assets/images/react.jpg';
 
 
@@ -19,13 +19,13 @@ export default class Technologies extends Component {
           <div className="type ">
 
             <div>
-              <h3 style={{ textAlign: "center", color:"#e8e8e8" }}>
+              <h2 style={{ textAlign: "center", color:"#e8e8e8" }}>
                 Hi, my name is Kenneth Solano
-              </h3>
+              </h2>
             </div>
             <div>
               {" "}
-              <h2 style={{ textAlign: "center", color:"#e8e8e8" }}>
+              <h3 style={{ textAlign: "center", color:"#e8e8e8" }}>
                 I am{" "}
                 <Typed
                   strings={["a developer", "a problem-solver", "a dog lover"]}
@@ -35,7 +35,7 @@ export default class Technologies extends Component {
                   // style={{ color: "red" }}
                   loop
                 />
-              </h2>
+              </h3>
             </div>
             <div className="firstIcons" style={{ display: "flex" }}>
               <a href="https://github.com/klsolano7">
@@ -93,10 +93,10 @@ export default class Technologies extends Component {
                         </div>
                         <div className="col-6">
                           <li class="list-group-item">
-                            <br />Sass
+                            <Sass/><div>Sass</div>
                           </li>
                           <li class="list-group-item">
-                            Pic<br /><div>jQuery</div>
+                            <Jquery/><div>jQuery</div>
                           </li>
                           <li class="list-group-item">
                             <Bootstrap/><div>Bootstrap</div>
@@ -126,10 +126,10 @@ export default class Technologies extends Component {
                       <div className="row">
                         <div className="col-6">
                           <li class="list-group-item">
-                            Pic<br />Node.js
+                            <Node/><div>Node.js</div>
                           </li>
                           <li class="list-group-item">
-                            Pic<br />MongoDB
+                            <Mongodb/><div>MongoDB</div>
                           </li>
                           <li class="list-group-item">
                             Pic<br />Mongoose
